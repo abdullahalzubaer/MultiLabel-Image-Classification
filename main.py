@@ -66,11 +66,12 @@ for i in range(10):
 
 plt.style.use('ggplot')
 
+n_epochs = len(history.epoch)
+epoch = range(0, n_epochs)
+
 loss = history.history['loss']
 val_loss = history.history['val_loss']
 
-n_epochs = len(history.history['loss'])
-epoch = range(0, n_epochs)
 
 plt.plot(epoch, loss, color='tab:blue', label="Training loss")
 plt.plot(epoch, val_loss, color='tab:red', label="Validation loss")
@@ -85,9 +86,6 @@ plt.show()
 
 accuracy = history.history['accuracy']
 val_accuracy = history.history['val_accuracy']
-
-n_epochs = len(history.history['accuracy'])
-epoch = range(0, n_epochs)
 
 plt.plot(epoch, accuracy, color="tab:blue", label="Training accuracy")
 plt.plot(epoch, val_accuracy, color="tab:red", label="Validation accuracy")
