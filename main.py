@@ -1,9 +1,8 @@
-import tensorflow as tf
-from keras.preprocessing import image
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-
+import tensorflow as tf
+from keras.preprocessing import image
 
 image_directory = "IMAGE_DIRECTORY_PATH"
 metadata_directory = "METADATA_PATH"
