@@ -4,7 +4,7 @@
 
 ## Data preprocessing
 
-In this project I am goint to use movie poster dataset for multi label image classificaiton by adopting deep neural network. The dataset comes in two folder, in one folder we have
+In this project I am going to use movie poster dataset for multi label image classificaiton by adopting deep neural network. The dataset comes in two folder, in one folder we have
 the movie posters and in another folder we have the metadata for each poster. The metadata in the poster has Id (correspnding to the movie poster) and other attributes including Genres.
 
 To label the movie posters we have to use the ID in the metadata file and load the corresponding movie poster into a pandas dataframe.
